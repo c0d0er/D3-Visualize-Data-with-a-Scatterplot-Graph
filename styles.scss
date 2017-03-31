@@ -1,6 +1,5 @@
 body{
-    //background-image: url(https://www.walldevil.com/wallpapers/a53/8608-wallpapers-sports.jpg);
-    background: url(http://images.performgroup.com/di/library/sporting_news/6d/c8/tour-de-france-stage-18-072315-getty-ftrjpg_1vx97yvt9ub6n1h9oiv513ty5d.jpg?t=-1151577354);
+    background: url(http://cdn.backgroundhost.com/backgrounds/subtlepatterns/wood_pattern.png);
 }
 
 .plot{
@@ -17,44 +16,17 @@ body{
         border-radius: 10px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
         pointer-events: none;
-        opacity: 0.9;
+        opacity: 0.9;        
 }
 
 svg{
-	background-color: white;
-    opacity: 0.8;
+    background-color: white;
+    opacity: 1;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 .name, .year, .doping, .foot{
-	color: white;
+
 	opacity: 1;
+  color: white;
 }
-
- /*
-http://codepen.io/neotriz/pen/xEPwrx?editors=0110
-  .tooltip1 {
-  position: absolute;
-  text-align: center;
-  width: 250px;
-  height: 98px;
-  padding: 7px;
-  font: 15px sans-serif;
-  background: black;
-  border: 25px;
-  border-radius: 12px;
-  line-height: 18px;
-  pointer-events: none;
-  box-shadow: 0px 0px 12px -10px;
-}
-
-g.axis text{
-    fill: white;
-		shape-rendering:crispEdges;
-}
-g.axis path {
-    stroke-width:2;
-    stroke:white;
-		shape-rendering: crispEdges;
-}
-*/
