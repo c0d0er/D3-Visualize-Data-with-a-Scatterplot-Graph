@@ -2,7 +2,6 @@ class Scatterplot extends React.Component {
   componentDidMount() {
     $.getJSON('https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/cyclist-data.json', (data) => {
       let plotData = data;
-      console.log(plotData);
       const rank1Seconds = 2210; //fastest speed;
       const formatTime = d3.timeFormat("%M:%S"); //change seconds to m:s form;
       const formatSeconds = seconds => formatTime(new Date(2017, 3, 22, 0, 0, seconds)); //change seconds to m:s function;
@@ -129,18 +128,9 @@ class Scatterplot extends React.Component {
           .tickFormat("")
         );
 
-      /*
-      // if you use d === 20 the second grid line from right will be removed (20 seconds is the x value here)
-      svg.selectAll(".tick")
-          .each(function (d) {
-              if ( d === 0 ) {
-                  this.remove();
-              }
-          });*/
-
       svg.selectAll(".tick > line")
         .each(function(d) {
-          if (d === 0) { //change to 20 then remove 00:20 line and ranking 20 linke both;
+          if (d === 0) {
             this.remove();
           }
         });
@@ -209,7 +199,6 @@ class Scatterplot extends React.Component {
         .attr('fill', 'black')
         .style('font-size', '1em')
         .text("Riders with doping allegations");
-
     })
   }
 
@@ -224,7 +213,6 @@ https://en.wikipedia.org/wiki/Alpe_d%27Huez'<br/>
 http://www.fillarifoorumi.fi/forum/showthread.php?38129-Ammattilaispy%F6r%E4ilij%F6iden-nousutietoja-%28aika-km-h-VAM-W-W-kg-etc-%29&p=2041608#post2041608<br/>
 https://alex-cycle.blogspot.com/2015/07/alpe-dhuez-tdf-fastest-ascent-times.html<br/>
 http://www.dopeology.org/
-
 </div>
 </div>
     )
