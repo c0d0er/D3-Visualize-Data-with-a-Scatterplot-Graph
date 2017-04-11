@@ -1,6 +1,6 @@
 class Scatterplot extends React.Component {
   componentDidMount() {
-    $.getJSON('https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/cyclist-data.json', (data) => {
+    $.getJSON('https://raw.githubusercontent.com/c0d0er/D3-Visualize-Data-with-a-Scatterplot-Graph/master/scatterPlot.json', (data) => {
       let plotData = data;
       const rank1Seconds = 2210; //fastest speed;
       const formatTime = d3.timeFormat("%M:%S"); //change seconds to m:s form;
